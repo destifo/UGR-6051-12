@@ -1,0 +1,76 @@
+.content{
+    height: 69%;
+    max-width: 100%;
+    margin: 2em 2em;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-gap: 2em;
+}
+
+    .comment{
+        min-width: 100%;
+        max-width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 3em;
+        margin-right: 1em;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        justify-content: space-between;
+    }
+        .comment div{
+            padding: 1.5em;
+            max-height: 90%;
+            max-width: 90%;
+            min-width: 50%;
+            min-height: 30%;
+            border: 2px dashed #c3c3c3;
+            margin: 1em 0;
+            overflow-y: auto;
+
+        }
+    
+    .commentimage{
+        text-align: center;
+        padding: 20% 30%;
+        max-height: 100%;
+        min-width: 40%;
+    }
+
+@media screen and (max-width: 811px){
+
+    .content{
+        max-width: 80%;
+        max-height: 60.1%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .comment{
+        max-height: 65%;
+    }
+
+    .commentimage{
+        max-height: 25%;
+    }
+
+    .commentimage{
+        padding: 0;
+        width: 150px;
+        height: 150px;
+    }
+        .commentimage img{
+            padding-top: 1.5em;
+            width: 150px;
+            height: 150px;
+        }
+
+}
+
+
+@media  screen and (max-width: 375px) {
+    
+}
