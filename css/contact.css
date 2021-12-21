@@ -1,14 +1,13 @@
 .content{
     min-height: 69%;
-    height: 100%;
     max-width: 150%;
     margin: 1em;
     display: grid;
-    grid-template-columns: 1.1fr 1fr;
+    grid-template-columns:  1.1fr 1fr;
     column-gap: 2em;
 }
     main{
-        max-height: 100%;
+        max-height: 70%;
         max-width: 100%;
         padding: 1em;
         overflow-y: auto;
@@ -18,7 +17,6 @@
         padding-left: 5%;
         overflow-y: auto;
         overflow-x: hidden;
-
     }
         main h1{
             margin-bottom: 0;
@@ -31,8 +29,8 @@
             background-color: #F1F1F1;
             display: flex;
             flex-direction: column;
-            max-width: 45%;
-            max-height: 70%;
+            max-width: 450px;
+            max-height: 80%;
             min-width: 265px;
             min-height: 176px;
             padding: 0.3em;
@@ -43,14 +41,15 @@
         }
 
             .contact *{
-                flex-grow: 1;
                 margin: 0.3em 0;
             }
             
             main form input{
                 min-height: 30px;
                 color: #c3c3c3;
-                max-height: 5%;
+                max-height: 8%;
+                min-height: 40px;
+                max-width: 450px;
 
             }
 
@@ -58,6 +57,8 @@
                 margin-bottom: 1em;
                 font-size: 1.5em;
                 color: #c3c3c3;
+                max-width: 450px;
+
             }
 
             #send{
@@ -74,12 +75,13 @@
     aside{
         padding: 2em;
         max-width: 100%;
-        max-height: 150%;
+        max-height: 100%;
         display: grid;
         background-color: #F1F1F1;
-        grid-template-rows: 3fr 2fr;
+        grid-template-rows: 2fr 2fr;
         overflow-y: auto;
         overflow-x: hidden;
+        text-align: center;
     }
         .contact-img{
             text-align: center;
@@ -89,14 +91,14 @@
             .contact-img img{
                 min-width: 276px;
                 min-height: 171px;
+                max-width: 100%;
+                max-height: 100%;
             }
         
         .socialcontact{
             display: flex;
             flex-direction: column;
-            margin: 2em;
-            margin-top: 0;
-            padding-left: 4em;
+
         }
             .socialcontact *{
                 margin: 0.7em;
@@ -117,3 +119,23 @@
                 font-size: 1em;
                 color: #131111;
             }
+
+@media screen and (max-width:1263px){
+    .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   
+}
+
+@media screen and (max-width: 656px){
+    main form{
+        height: 391px;
+    }
+    main {
+        height: 550px;
+        padding-bottom: 0;
+        overflow: hidden;
+    }
+}

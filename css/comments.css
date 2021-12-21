@@ -29,7 +29,7 @@
             min-height: 30%;
             border: 2px dashed #c3c3c3;
             margin: 1em 0;
-            overflow-y: auto;
+            overflow-y: hidden;
 
         }
     
@@ -51,6 +51,10 @@
 
     .comment{
         max-height: 65%;
+        display: block;
+    }
+    .comment div{
+        display: block;
     }
 
     .commentimage{
@@ -72,5 +76,12 @@
 
 
 @media  screen and (max-width: 375px) {
+    .commentimage img{
+        padding-top: 1.5em;
+        width: 80px;
+        height: 80px;
+        float: left;
+        margin-right: 1em;
+    }
     
 }
